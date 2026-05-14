@@ -184,21 +184,73 @@
       padding-top: 20px;
     }
 
-    @media screen and (max-width: 1200px) {
-      .cv-container {
-        width: 100%;
-        grid-template-columns: 1fr;
-      }
+@media screen and (max-width: 1200px) {
 
-      .left {
-        border-right: none;
-        border-bottom: 1px solid #ddd;
-      }
+  body {
+    padding: 10px;
+  }
 
-      .name {
-        font-size: 60px;
-      }
-    }
+  .cv-container {
+    width: 100%;
+    grid-template-columns: 1fr;
+  }
+
+  .left {
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+    padding: 25px;
+  }
+
+  .right {
+    padding: 25px;
+  }
+
+  .header-top {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .name {
+    font-size: 58px;
+    line-height: 1;
+    margin-top: 15px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  .profile-photo img {
+    width: 170px;
+    height: 210px;
+    margin-top: 10px;
+  }
+
+  .section h2 {
+    font-size: 28px;
+  }
+
+  .job h3 {
+    font-size: 22px;
+  }
+
+  .job .role {
+    font-size: 18px;
+  }
+
+  .section p,
+  .section li,
+  .contact-item {
+    font-size: 16px;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
   </style>
 </head>
 <body>
