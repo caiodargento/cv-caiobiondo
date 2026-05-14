@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Caio Biondo - CV Técnico</title>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #f3f3f3;
+      font-family: 'Inter', sans-serif;
+      color: #1f1f1f;
+      padding: 30px;
+    }
+
+    .cv-container {
+      width: 1400px;
+      margin: auto;
+      background: #ffffff;
+      display: grid;
+      grid-template-columns: 360px 1fr;
+      border: 1px solid #d7d7d7;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    }
+
+    .left {
+      padding: 40px;
+      border-right: 1px solid #d8d8d8;
+      background: #fafafa;
+    }
+
+    .right {
+      padding: 40px 50px;
+    }
+
+    .name {
+      font-family: 'Oswald', sans-serif;
+      font-size: 88px;
+      line-height: 0.95;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .name .first {
+      color: #0e2b66;
+      display: block;
+      font-weight: 700;
+    }
+
+    .name .last {
+      color: #c79a2d;
+      display: block;
+      font-weight: 700;
+    }
+
+    .subtitle {
+      font-family: 'Oswald', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: #2d3d63;
+      font-size: 20px;
+      margin-bottom: 30px;
+      border-bottom: 2px solid #d6d6d6;
+      padding-bottom: 15px;
+    }
+
+    .section {
+      margin-bottom: 40px;
+    }
+
+    .section h2 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 34px;
+      color: #0e2b66;
+      margin-bottom: 18px;
+      text-transform: uppercase;
+      border-bottom: 2px solid #c79a2d;
+      padding-bottom: 8px;
+      letter-spacing: 1px;
+    }
+
+    .section p,
+    .section li {
+      font-size: 18px;
+      line-height: 1.7;
+      color: #333;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .contact-item {
+      margin-bottom: 14px;
+      font-size: 18px;
+      color: #222;
+    }
+
+    .job {
+      margin-bottom: 40px;
+      padding-left: 24px;
+      border-left: 4px solid #c79a2d;
+      position: relative;
+    }
+
+    .job::before {
+      content: '';
+      width: 14px;
+      height: 14px;
+      background: #c79a2d;
+      border-radius: 50%;
+      position: absolute;
+      left: -9px;
+      top: 6px;
+    }
+
+    .job h3 {
+      font-size: 28px;
+      color: #111;
+      margin-bottom: 6px;
+    }
+
+    .job .role {
+      color: #0e2b66;
+      font-weight: 700;
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .job .date {
+      color: #777;
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+      margin-top: 15px;
+    }
+
+    .skill {
+      background: #ffffff;
+      border: 1px solid #d8d8d8;
+      padding: 12px;
+      border-radius: 10px;
+      font-size: 16px;
+      font-weight: 600;
+      color: #1f1f1f;
+    }
+
+    .footer {
+      margin-top: 60px;
+      text-align: center;
+      font-family: 'Oswald', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      color: #666;
+      font-size: 18px;
+      border-top: 1px solid #ddd;
+      padding-top: 20px;
+    }
+
+    @media screen and (max-width: 1200px) {
+      .cv-container {
+        width: 100%;
+        grid-template-columns: 1fr;
+      }
+
+      .left {
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+      }
+
+      .name {
+        font-size: 60px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="cv-container">
+
+    <div class="left">
+
+      <div class="section">
+        <h2>Sobre Mim</h2>
+        <p>
+          Desde 2023 venho desenvolvendo projetos utilizando Apache Cordova,
+          Python Django e Linux. Entre os destaques estão um aplicativo do Livro
+          de Mórmon, aplicações híbridas mobile, um app de Tarot, backend para
+          plataforma de empregos utilizando Django REST Framework, automações,
+          APIs e soluções voltadas para produtividade.
+        </p>
+      </div>
+
+      <div class="section">
+        <h2>Contatos</h2>
+
+        <div class="contact-item">📧 caio.alessandro.biondo@gmail.com</div>
+        <div class="contact-item">💼 linkedin.com/in/caio-b-5b53ba2a4</div>
+        <div class="contact-item">🐙 github.com/caiodargento</div>
+        <div class="contact-item">🦊 gitlab.com/caio.alessandro.biondo</div>
+        <div class="contact-item">📱 13982242160</div>
+        <div class="contact-item">🎮 twitch.tv/arkade84</div>
+
+      </div>
+
+      <div class="section">
+        <h2>Competências</h2>
+
+        <div class="skills-grid">
+          <div class="skill">Python</div>
+          <div class="skill">Django / DRF</div>
+          <div class="skill">Apache Cordova</div>
+          <div class="skill">Linux</div>
+          <div class="skill">Docker</div>
+          <div class="skill">Kubernetes</div>
+          <div class="skill">AWS / ECS / EKS</div>
+          <div class="skill">Kafka / RabbitMQ</div>
+          <div class="skill">Angular</div>
+          <div class="skill">DevOps / SRE</div>
+          <div class="skill">Git / GitHub</div>
+          <div class="skill">FFmpeg</div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>Formação</h2>
+
+        <ul>
+          <li>FATEC São Caetano do Sul — Segurança da Informação</li>
+          <li>FATEC Ourinhos — Sistemas da Informação</li>
+          <li>Faculdades Oswaldo Cruz — Rádio e TV</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="right">
+
+      <div class="name">
+        <span class="first">Caio</span>
+        <span class="last">Biondo</span>
+      </div>
+
+      <div class="subtitle">
+        Python • Linux • Cordova • DevOps • Backend • Open Source
+      </div>
+
+      <div class="section">
+        <h2>Experiência Profissional</h2>
+
+        <div class="job">
+          <h3>A Igreja de Jesus Cristo dos Santos dos Últimos Dias</h3>
+          <div class="role">Secretário de desenvolvimento</div>
+          <div class="date">mar 2024 - mar 2026 • Praia Grande/SP</div>
+          <p>
+            Desenvolvimento de aplicação mobile com Apache Cordova focada na
+            organização de informações de membros (LM), integração de
+            funcionalidades e foco em usabilidade.
+          </p>
+        </div>
+
+        <div class="job">
+          <h3>Engineering Brasil</h3>
+          <div class="role">Analista sênior</div>
+          <div class="date">set 2024 - nov 2025 • São Paulo/SP</div>
+          <p>
+            Sustentação de ambientes Linux hospedando APIs para a TIM,
+            monitoramento, troubleshooting, análise de logs e manutenção de
+            estabilidade e performance.
+          </p>
+        </div>
+
+        <div class="job">
+          <h3>Stefanini Brasil</h3>
+          <div class="role">Analista de sistemas sênior</div>
+          <div class="date">jun 2023 - nov 2023 • São Paulo/SP</div>
+          <p>
+            Atuação com Python, Docker, Linux e sustentação de ambientes.
+          </p>
+        </div>
+
+        <div class="job">
+          <h3>Claro Brasil</h3>
+          <div class="role">Analista de rede</div>
+          <div class="date">fev 2023 - jun 2023 • Remoto</div>
+          <p>
+            Desenvolvimento de APIs Django RestFull com Angular, administração
+            Linux, VMware, LDAP, GitHub e automações.
+          </p>
+        </div>
+
+        <div class="job">
+          <h3>Itaú Unibanco</h3>
+          <div class="role">Analista de sistemas sênior</div>
+          <div class="date">mai 2021 - ago 2022 • São Paulo/SP</div>
+          <p>
+            Desenvolvimento Python voltado para DEVOPS/SRE, Kubernetes,
+            AWS/ECS/EKS, Kafka, RabbitMQ e APIs Django REST Framework.
+          </p>
+        </div>
+
+        <div class="job">
+          <h3>Serasa Experian</h3>
+          <div class="role">Analista de sistemas sênior</div>
+          <div class="date">jul 2019 - ago 2020 • São Paulo/SP</div>
+          <p>
+            Desenvolvimento utilizando JavaScript e Python, mensageria Kafka,
+            ambientes legados e sustentação de aplicações Linux.
+          </p>
+        </div>
+
+        <div class="job">
+          <h3>Capgemini</h3>
+          <div class="role">Analista de Sistema Jr</div>
+          <div class="date">mar 2018 - jan 2019 • São Carlos/SP</div>
+          <p>
+            Sustentação de aplicações Java, manutenção corretiva e evolutiva,
+            testes, qualidade e estabilidade de sistemas.
+          </p>
+        </div>
+
+      </div>
+
+      <div class="footer">
+        Tecnologia • Linux • Desenvolvimento • Open Source
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
